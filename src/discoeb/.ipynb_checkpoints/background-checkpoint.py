@@ -7,7 +7,6 @@ import diffrax as drx
 import equinox as eqx
 from jax_cosmo.scipy.integrate import romb
 from functools import partial
-from typing import Union
 
 
 def a_of_tau(tau_: Union[float, jax.Array], param: dict) -> Union[float, jax.Array]:
