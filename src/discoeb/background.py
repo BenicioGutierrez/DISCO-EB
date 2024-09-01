@@ -9,7 +9,7 @@ from jax_cosmo.scipy.integrate import romb
 from functools import partial
 
 
-def a_of_tau( tau_ : float | jax.Array, param : dict ) -> float | jax.Array:
+def a_of_tau(tau_: Union[float, jax.Array], param: dict) -> Union[float, jax.Array]:
     a, _, _, _ = param['sol'].evaluate(tau_)
     return a
 
